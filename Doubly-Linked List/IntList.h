@@ -20,6 +20,8 @@ class IntList {
 private:
     IntNode* dummyHead;
     IntNode* dummyTail;
+    IntNode* head;
+    IntNode* tail;
 
 public:
     IntList();

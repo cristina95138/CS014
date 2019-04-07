@@ -16,6 +16,9 @@ IntList::IntList() {
 
     dummyTail->prev = dummyHead;
     dummyTail->next = nullptr;
+
+    head = dummyHead;
+    tail = dummyTail;
 }
 
 IntList::~IntList() {
