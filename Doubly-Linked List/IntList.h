@@ -18,10 +18,10 @@ struct IntNode {
 class IntList {
 
 private:
-    IntNode* dummyHead;
-    IntNode* dummyTail;
     IntNode* head;
     IntNode* tail;
+    IntNode* dummyHead;
+    IntNode* dummyTail;
 
 public:
     IntList();
