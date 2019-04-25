@@ -3,7 +3,6 @@
 // Created by Cristina Lawson on 2019-04-13.
 //
 
-
 #include <iostream>
 #include <list>
 #include <stack>
