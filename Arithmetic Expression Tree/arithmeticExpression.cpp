@@ -94,8 +94,23 @@ void arithmeticExpression::postfix(TreeNode *node) {
     cout << node->data;
 }
 
-void arithmeticExpression::visualizeTree(ofstream &out, TreeNode *node) {
+void arithmeticExpression::visualizeTree(ofstream &out, TreeNode *root) {
+    if (!root) {
+        return;
+    }
 
+    visualizeTree(out, root->left);
+    visualizeTree(out, root->right);
+
+    out << root->key << " [label = \"" << root->data << "\" ]; " << endl;
+
+    if (root->left) {
+        out << root->key << " -> " << root->left->key << endl;
+    }
+
+    if (root->right) {
+        out << root->key << " -> " << root->right->key << endl;
+    }
 }
 
 int arithmeticExpression::priority(char op){
