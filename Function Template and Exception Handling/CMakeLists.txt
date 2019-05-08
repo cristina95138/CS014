@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.13)
+project(Function_Template_and_Exception_Handling)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(Function_Template_and_Exception_Handling main.cpp)
